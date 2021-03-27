@@ -1,11 +1,34 @@
 #!/usr/bin/env bash
 
-touch /tmp/got_in.txt
-touch /home/codespace/got_in.txt
+apt-get update
+apt-get install -y \
+  ctop \
+  curl \
+  docker.io \
+  git \
+  gron \
+  jq \
+  man-db \
+  openssh-client \
+  rlwrap \
+  tmux \
+  tree \
+  unar \
+  vim \
+  wget \
+  zsh
 
-gem install homesick
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
+gem install --no-document homesick
 homesick clone benjaminoakes/homesick-vi-everywhere
 homesick symlink homesick-vi-everywhere --force
 homesick clone ContinuityControl/dotfiles
 homesick symlink dotfiles --force
+
+vim -c 'PlugInstall --sync' -c 'qa'
+
+mkdir -p ~/.zsh; echo '' > ~/.zsh/local.zsh
+mkdir -p ~/.gitconfig.d; printf "\n" > ~/.gitconfig.d/user
+# Might later include my own tmux config but for now, stop its complaining
+mkdir -p ~/.tmux; echo '' > ~/.tmux/user.conf

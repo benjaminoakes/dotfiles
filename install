@@ -25,7 +25,7 @@ homesick symlink homesick-vi-everywhere --force
 homesick clone ContinuityControl/dotfiles
 homesick symlink dotfiles --force
 
-# vim -c 'PlugInstall --sync' -c 'qa'
+vim -c 'PlugInstall --sync' -c 'qa'
 
 mkdir -p ~/.zsh; echo '' > ~/.zsh/local.zsh
 mkdir -p ~/.gitconfig.d; printf "\n" > ~/.gitconfig.d/user

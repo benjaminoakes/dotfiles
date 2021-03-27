@@ -1,3 +1,8 @@
+#!/usr/bin/env bash
+
+touch /tmp/got_in.txt
+touch /home/codespace/got_in.txt
+
 gem install homesick
 
 homesick clone benjaminoakes/homesick-vi-everywhere

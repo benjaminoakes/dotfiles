@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+apt update
+apt install -y \
+  curl \
+  git \
+  jq \
+  rlwrap \
+  tmux \
+  tree \
+  vim \
+  wget \
+  zsh
+
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+
+gem install --no-document homesick
+homesick clone benjaminoakes/homesick-vi-everywhere
+homesick symlink homesick-vi-everywhere --force
+homesick clone ContinuityControl/dotfiles
+homesick symlink dotfiles --force
+
+mkdir -p ~/.zsh; echo '' > ~/.zsh/local.zsh
+mkdir -p ~/.gitconfig.d; printf "\n" > ~/.gitconfig.d/user
+# Might later include my own tmux config but for now, stop its complaining
+mkdir -p ~/.tmux; echo '' > ~/.tmux/user.conf

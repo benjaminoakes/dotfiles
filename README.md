@@ -9,3 +9,9 @@ For installation on [Gitpod](http://gitpod.io/):
 ```sh
 curl https://raw.githubusercontent.com/benjaminoakes/dotfiles/main/install | sh
 ```
+
+## Termux
+
+```sh
+curl https://raw.githubusercontent.com/benjaminoakes/dotfiles/main/termux-install | sh
+```

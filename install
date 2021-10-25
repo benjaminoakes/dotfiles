@@ -10,6 +10,7 @@ sudo apt-get install -y \
   man-db \
   openssh-client \
   rlwrap \
+  ruby \
   tmux \
   tree \
   unar \
@@ -23,7 +24,7 @@ sudo apt-get install pack-cli
 
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
-gem install --no-document homesick
+sudo gem install --no-document homesick
 homesick clone benjaminoakes/homesick-vi-everywhere
 homesick symlink homesick-vi-everywhere --force
 homesick clone ContinuityControl/dotfiles

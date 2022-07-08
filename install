@@ -18,10 +18,6 @@ sudo apt-get install -y \
   wget \
   zsh
 
-sudo add-apt-repository ppa:cncf-buildpacks/pack-cli
-sudo apt-get update
-sudo apt-get install pack-cli
-
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 sudo gem install --no-document homesick

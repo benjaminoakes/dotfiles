@@ -23,7 +23,7 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 sudo gem install --no-document homesick
 homesick clone benjaminoakes/homesick-vi-everywhere
 homesick symlink homesick-vi-everywhere --force
-homesick clone ContinuityControl/dotfiles
+homesick clone TigerDenHackers/dotfiles
 homesick symlink dotfiles --force
 
 mkdir -p ~/.zsh; echo '' > ~/.zsh/local.zsh

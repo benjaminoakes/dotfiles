@@ -37,3 +37,5 @@ mkdir -p ~/.zsh; echo '' > ~/.zsh/local.zsh
 mkdir -p ~/.gitconfig.d; printf "\n" > ~/.gitconfig.d/user
 # Might later include my own tmux config but for now, stop its complaining
 mkdir -p ~/.tmux; echo '' > ~/.tmux/user.conf
+
+chsh --shell /bin/zsh

@@ -38,3 +38,4 @@ mkdir -p ~/.gitconfig.d; printf "\n" > ~/.gitconfig.d/user
 mkdir -p ~/.tmux; echo '' > ~/.tmux/user.conf
 
 chsh --shell /bin/zsh
+yes | vim -c :PlugInstall -c :qa

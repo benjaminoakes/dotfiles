@@ -31,6 +31,8 @@ homesick clone benjaminoakes/homesick-vi-everywhere
 homesick symlink homesick-vi-everywhere --force
 homesick clone TigerDenHackers/dotfiles
 homesick symlink dotfiles --force
+homesick clone benjaminoakes/personal-dotfiles
+homesick symlink personal-dotfiles --force
 
 mkdir -p ~/.zsh; echo '' > ~/.zsh/local.zsh
 mkdir -p ~/.gitconfig.d; printf "\n" > ~/.gitconfig.d/user

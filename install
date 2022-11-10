@@ -36,7 +36,7 @@ homesick symlink personal-dotfiles --force
 
 # Load my personal config, but still share the majority of TigerDenHackers/dotfiles
 mkdir -p ~/.zsh; echo 'source "$HOME/.personal/zsh/local.zsh"' > ~/.zsh/local.zsh
-mkdir -p ~/.gitconfig.d; printf "\n" > ~/.gitconfig.d/user
+mkdir -p ~/.gitconfig.d; echo '[include]\n  path = ~/.personal/gitconfig.d/user' > ~/.gitconfig.d/user
 # Might later include my own tmux config but for now, stop its complaining
 mkdir -p ~/.tmux; echo '' > ~/.tmux/user.conf
 

@@ -17,3 +17,8 @@ curl https://raw.githubusercontent.com/benjaminoakes/dotfiles/main/install | sh
 ```sh
 curl https://raw.githubusercontent.com/benjaminoakes/dotfiles/main/termux-install | sh
 ```
+
+## amd64 without root
+
+- https://github.com/andsens/homeshick
+- https://github.com/romkatv/zsh-bin

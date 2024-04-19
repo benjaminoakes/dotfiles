@@ -1,3 +1,7 @@
+# Usage: sh setup-ubuntu-desktop.sh
+#
+# This file is intended to contain idempotent commands that are safe to run multiple times.
+
 cat > ~/.hidden << EOF
 snap
 Desktop

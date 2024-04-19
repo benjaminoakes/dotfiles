@@ -1,5 +1,7 @@
 # Usage: sh setup-ubuntu-desktop.sh
 #
+# Purpose: Set up an Ubuntu 22.04-based desktop environment
+#
 # This file is intended to contain idempotent commands that are safe to run multiple times.
 
 cat > ~/.hidden << EOF

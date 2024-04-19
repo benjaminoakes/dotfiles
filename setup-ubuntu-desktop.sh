@@ -12,6 +12,9 @@ EOF
 sudo apt install -y curl
 sudo apt autoremove -y
 
+sudo apt install -y flatpak
+flatpak install flathub com.belmoussaoui.Authenticator
+
 # https://docs.syncthing.net/users/autostart.html#linux
 mkdir -p ~/.config/autostart/
 cp /usr/share/applications/syncthing-start.desktop ~/.config/autostart/

@@ -65,3 +65,11 @@ cp /usr/share/applications/syncthing-start.desktop ~/.config/autostart/
 #
 # chsh --shell /bin/zsh
 # yes | vim -c :PlugInstall -c :qa
+
+# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+# sudo apt install ./google-chrome-stable_current_amd64.deb
+# # rm google-chrome-stable_current_amd64.deb
+
+# sudo add-apt-repository multiverse
+# sudo apt update
+# sudo apt install -y steam

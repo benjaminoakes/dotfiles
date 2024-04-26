@@ -78,3 +78,5 @@ cp /usr/share/applications/syncthing-start.desktop ~/.config/autostart/
 # sudo apt-add-repository -y ppa:rael-gc/rvm
 # sudo apt-get update
 # sudo apt-get install rvm
+# sudo usermod -a -G rvm $USER
+

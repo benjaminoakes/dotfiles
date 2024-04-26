@@ -73,3 +73,8 @@ cp /usr/share/applications/syncthing-start.desktop ~/.config/autostart/
 # sudo add-apt-repository multiverse
 # sudo apt update
 # sudo apt install -y steam
+
+# # https://github.com/rvm/ubuntu_rvm
+# sudo apt-add-repository -y ppa:rael-gc/rvm
+# sudo apt-get update
+# sudo apt-get install rvm
